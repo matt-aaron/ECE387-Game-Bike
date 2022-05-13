@@ -62,8 +62,8 @@ void loop() {
   // Joystick states
   Joystick.setXAxis(analogRead(JOYSTICK_X));
   Joystick.setYAxis(0);
-  Joystick.setButton(2, analogRead(JOYSTICK_Y) <= 250);  // Shift up
-  Joystick.setButton(3, analogRead(JOYSTICK_Y) >= 773);  // Shift down
+  Joystick.setButton(2, analogRead(JOYSTICK_Y) <= 10);  // Shift up
+  Joystick.setButton(3, analogRead(JOYSTICK_Y) >= 1013);  // Shift down
 
   delay(50);
 }
